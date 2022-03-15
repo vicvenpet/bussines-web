@@ -57,5 +57,5 @@ doWithLowerVersion(version: 1.3) // <
 Example
 
 ``` kotlin
-Version 1.3
+doWithLowerVersion(version: 1.3)
 ```
