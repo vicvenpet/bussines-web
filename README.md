@@ -6,11 +6,6 @@ A simple web page for a high school *business* project.
 
 ## Download
 
-#### Gradle
-``` groovy
-compile 'com.costular:kotlin-utils:0.1'
-```
-
 ## How to use
 
 It depends on utilities. Some of them just work as function extensions and you don't have to do anything special, just call a method like another one.
@@ -53,16 +48,14 @@ sharedPrefs.edit {
 These methods are static.
 
 ``` kotlin 
-doWithVersion(version: Int, lambda) // ==
-doWithAtLeastVersion(version: Int, lambda) // >=
-doWithHigherVersion(version: Int, lambda) // >
-doWithLowerVersion(version: Int, lambda) // <
+doWithVersion(version: 1.0) // ==
+doWithAtLeastVersion(version: 1.1) // >=
+doWithHigherVersion(version: 1.2) // >
+doWithLowerVersion(version: 1.3) // <
 ```
 
 Example
 
 ``` kotlin
-doWithAtLeastVersion(21) {
-    // Do something on Lollipop version or higher
-}
+Version 1.3
 ```
